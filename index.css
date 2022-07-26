@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'JetBrains Mono',monospace;
+    color: rgba(0,0,0,0.8);
+    text-shadow: 0 0 2pxrgba(0,0,0,0.2);
+}
+body {
+    background-color: #8a2be2;
+}
+
+.main-container {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.imagen-container {
+    overflow: hidden;
+    width: 120px;
+    background-color: #000;
+    border-radius: 0.125rem;
+}
+
+.profile-image {
+    width: 100%;
+    display: block;
+    border-radius: 0.125rem;
+    border: 3px solid #000;
+}
+
+.header-content {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.profile-data {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    align-self: flex-end;
+}
+
+.Header-profession {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.Header-title {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.btn-hire_me {
+    position: absolute;
+    top: -4px;
+    right: 4px;
+    padding: 0.5rem 1rem;
+    border-radius: 1px;
+    border: 3px solid #000;
+    box-shadow: 4px 4px 0 rgb(0 0 0 / 60%);
+    background-color: #8a2be2;
+    text-decoration: none;
+    color: #e2e2e2;
+    font-weight: bolder;
+    text-align: center;
+    font-size: .8rem;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+.none{
+    list-style: none;
+}
+.black{
+    color: black;
+}
+.Profile-container, .Header-container, .Languages-container, .Interest-container, .Skills-container, .Academic-container, .Experience-container {
+    padding: 1rem;
+    border: 3px solid #000;
+    border-radius: 0.125rem;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 6px 6px 0 rgb(0 0 0 / 40%);
+    display: flex;
+    gap: 1rem;
+}
+
+.info-container, .Header-container {
+    max-width: 700px;
+}
+
+.info-container {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.Profile-container, .Languages-container, .Interest-container, .Skills-container, .Academic-container, .Experience-container {
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+}
+
+.Profile-container, .Header-container, .Languages-container, .Interest-container, .Skills-container, .Academic-container, .Experience-container {
+    padding: 1rem;
+    border: 3px solid #000;
+    border-radius: 0.125rem;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 6px 6px 0 rgb(0 0 0 / 40%);
+    display: flex;
+    gap: 1rem;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.Languages-item, .Interest-item, .Skills-item, .Academic-item, .Experience-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+.item-chips {
+    padding: 0.25rem 0.5rem;
+    border-radius: 1px;
+    border: 2px solid #000;
+    box-shadow: 3px 3px 0 rgb(0 0 0 / 60%);
+}
+.card-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
